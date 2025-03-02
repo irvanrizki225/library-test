@@ -1,0 +1,89 @@
+.sidebar {
+    min-height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #343a40;
+}
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 0;
+    padding: 0.75rem 1rem;
+}
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+.content {
+    padding: 20px;
+}
+.card-counter {
+    padding: 50px 20px 20px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.card-counter i {
+    font-size: 5em;
+    opacity: 0.5;
+}
+.card-counter .count-numbers {
+    /* position: absolute; */
+    padding-top: 0px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+    padding-left: 115px;
+    right: 35px;
+    top: 20px;
+    font-size: 32px;
+    display: block;
+}
+.card-counter .count-name {
+    padding-top: 0px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+    padding-left: 115px;
+    /* right: 35px; */
+    top: 65px;
+    text-transform: capitalize;
+    opacity: 0.8;
+    display: block;
+    font-size: 16px;
+}
+.bg-books {
+    background-color: #6f42c1;
+    color: #FFF;
+}
+.bg-members {
+    background-color: #fd7e14;
+    color: #FFF;
+}
+.bg-borrowed {
+    background-color: #20c997;
+    color: #FFF;
+}
+.bg-overdue {
+    background-color: #dc3545;
+    color: #FFF;
+}
+.table-action-btn {
+    margin: 0 3px;
+}
+.navbar {
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-brand {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: #343a40;
+}
+.table-responsive {
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.search-bar {
+    margin-bottom: 20px;
+}
