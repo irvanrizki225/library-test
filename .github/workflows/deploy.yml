@@ -34,10 +34,11 @@ jobs:
           username: ec2-user
           key: ${{ secrets.SSH_KEY }}
           script: |
-            docker system prune -a -f 
+            echo "🚀 Starting deployment on EC2..."
+            docker system prune -a -f
             cd ~/app
             docker pull irvanrizki225/library-api:${{ github.sha }}
             docker-compose down
-            docker-compose up -d
-
-# dengan
+            docker volume prune -f  # Bersihkan volume yang bisa menyimpan cache lama
+            docker-compose up -d --build  # Gunakan --build agar image terbaru dipakai
+            echo "✅ Deployment successful!"
