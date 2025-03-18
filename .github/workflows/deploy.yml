@@ -27,10 +27,6 @@ jobs:
     needs: build-and-push
     runs-on: ubuntu-latest
     steps:
-    - name: Pull latest code
-      run: |
-        ssh ec2-user@${{ secrets.AWS_HOST }} "cd ~/app && git pull origin main"
-        
     - name: Deploy to EC2
       uses: appleboy/ssh-action@v1.0.0
       with:
@@ -41,8 +37,9 @@ jobs:
           echo "🚀 Starting deployment on EC2..."
           docker system prune -a -f
           cd ~/app
+          git pull origin main
           docker pull irvanrizki225/library-api:${{ github.sha }}
           docker-compose down
           docker volume prune -f  # Bersihkan volume yang bisa menyimpan cache lama
-          docker-compose up -d --build  # Gunakan --build agar image terbaru dipakai
+          docker-compose up -d 
           echo "✅ Deployment successful!"
