@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\models\Book;
-use App\models\Category;
+use App\Models\Book;
+use App\Models\Category;
 
 use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Support\Facades\DB;

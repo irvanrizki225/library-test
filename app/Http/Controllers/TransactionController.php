@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\models\Book;
-use App\models\Transaction;
-use App\models\Customer;
+use App\Models\Book;
+use App\Models\Transaction;
+use App\Models\Customer;
 
 use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Support\Facades\DB;
