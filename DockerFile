@@ -20,6 +20,7 @@ RUN apt-get update && apt-get install -y \
         exif \
         pcntl \
         bcmath \
+        pcntl \
         gd \
         zip \
         intl
