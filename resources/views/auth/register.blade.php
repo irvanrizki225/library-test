@@ -35,7 +35,7 @@
                     <div class="card-header">
                         <div class="row">
                             <div class="col-md-12">
-                                Register User Sistem Perpustakaan CI/CD Test
+                                Register User Sistem Perpustakaan Oke
                             </div>
                             {{-- error log message --}}
                             @if ($errors->any())

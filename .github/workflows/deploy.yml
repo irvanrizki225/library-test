@@ -41,9 +41,6 @@ jobs:
           echo "🚀 Starting deployment on EC2..."
           docker system prune -a -f
           cd ~/app
-          git pull origin main
           docker pull irvanrizki225/library-api:${{ github.sha }}
-          docker-compose down
-          docker volume prune -f  # Bersihkan volume yang bisa menyimpan cache lama
-          docker-compose up -d
+          docker run -d -p 8000:8000 irvanrizki225/library-api:${{ github.sha }}
           echo "✅ Deployment successful!"
